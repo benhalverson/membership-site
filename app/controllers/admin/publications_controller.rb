@@ -45,6 +45,6 @@ def find_publication
 end
 
 def publications_params
-  params.require(:publications).permit(:title, :description, :file_url)
+  params.require(:publication).permit(:title, :description, :file_url)
 end
 end
