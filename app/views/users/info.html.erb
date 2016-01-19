@@ -1,0 +1,7 @@
+<h1>Users#info</h1>
+<%= current_user.email %></br>
+<% if @subscription.active %>
+subscribed
+<% else %>
+  <%= render 'form' %>
+<% end %>
