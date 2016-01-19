@@ -1,5 +1,5 @@
 <h4>Begin your $9.99 a month subscription</h4>
-<form action="" method="POST" id="payment-form">
+<form action="/users/charge" method="POST" id="payment-form">
   <span class="payment-errors"></span>
   <div class="row">
     <div class="col-md-6">
@@ -21,6 +21,9 @@
       </div>
 
   </div>
+   <button type="submit">Submit Payment</button>
+   <%= token_tag nil %>
+
 </form>
 
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
